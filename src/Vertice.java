@@ -7,7 +7,7 @@ public class Vertice {
     }
 
     /*
-        Agrega el numero de vertice para establecer un orden
+        Agrega el número de vértice para establecer un orden
      */
     public void asignarNumeroVertice(int numero_vertice) {
         this.numero_vertice = numero_vertice;
@@ -25,5 +25,16 @@ public class Vertice {
      */
     public boolean esIgualVertice(Vertice vertice_1) {
         return this.informacion_vertice.equals(vertice_1.getInformacionVertice());
+    }
+
+    /*
+        Se da la información de la clase
+     */
+    @Override
+    public String toString() {
+        return "Vertice{" +
+                "informacion_vertice='" + informacion_vertice + '\'' +
+                ", numero_vertice=" + numero_vertice +
+                '}';
     }
 }
